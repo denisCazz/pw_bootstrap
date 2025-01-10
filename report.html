@@ -12,15 +12,35 @@
   navbar con elemento brand e bottone per il menu a scomparsa 
   utile per dispositivi mobili
   -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <!-- Navbar moderna con Bootstrap -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">PW</a>
-      <!-- link a Lavazza con target _blank per non perdere focus sulla pagina principale del pw -->
-      <a class="navbar-brand" href="https://www.lavazza.it" target="_blank">Report sostenibilità di Lavazza</a>
-      <a class="navbar-brand" href="index.html">Torna alla home</a>
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <!-- Immagine logo con style inline per evitare che l'immagine sia troppo grande-->
+        <img src="images/logo.png" id="logo" alt="Logo UniPegaso" class="img-fluid bg-light rounded" style="max-height: 40px; width: auto;">
+      </a>
+      <!-- Bottone per mobile -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <!-- Links con anchor per le varie sezioni della pagina + link a pagina esterna per descrizione dei report -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html#projectDescr">Descrizione Progetto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html#reportDescr">Descrizione Report</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html#aboutLavazza">Informazioni su Lavazza</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html">Home</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
@@ -29,9 +49,12 @@
   container per contenere gli elementi della pagina
   -->
   <div class="container my-5">
-    <h1 class="text-center mb-4">Cosa sono i Report di Sostenibilità e perché devono essere trasparenti?</h1>
-
-    <div class="card mb-4">
+    <h1 class="text-center mb-4">
+      Cosa sono i Report di Sostenibilità e perché devono essere trasparenti?
+    </h1>
+  
+    <!-- Card: Cosa sono i Report di Sostenibilità -->
+    <div class="card mb-4 shadow">
       <div class="card-body">
         <h2 class="card-title">Cosa sono i Report di Sostenibilità?</h2>
         <p class="card-text">
@@ -39,28 +62,30 @@
         </p>
       </div>
     </div>
-
-    <div class="card mb-4">
+  
+    <!-- Card: Perché devono essere trasparenti -->
+    <div class="card mb-4 shadow">
       <div class="card-body">
         <h2 class="card-title">Perché devono essere trasparenti?</h2>
         <p class="card-text">
           La <strong>trasparenza</strong> nei report di sostenibilità è essenziale per costruire fiducia e credibilità. Senza trasparenza, infatti, c'è il rischio che i report vengano percepiti come puramente simbolici o, peggio, come una forma di <strong>greenwashing</strong> (cioè la pratica di presentarsi come più sostenibili di quanto si sia realmente). Ecco perché è importante che i dati siano:
         </p>
-        <ul class="list-group list-group-flush">
+        <ul class="list-group">
           <li class="list-group-item"><strong>Verificabili</strong>: basati su metriche chiare e standard riconosciuti (come i criteri ESG - Environmental, Social, Governance).</li>
           <li class="list-group-item"><strong>Completi</strong>: devono includere sia i successi che le sfide ancora da affrontare.</li>
           <li class="list-group-item"><strong>Accessibili</strong>: scritti in modo chiaro e comprensibile, affinché tutti gli stakeholder possano valutarli.</li>
         </ul>
       </div>
     </div>
-
-    <div class="card mb-4">
+  
+    <!-- Card: La trasparenza nel Project Work -->
+    <div class="card mb-4 shadow">
       <div class="card-body">
         <h2 class="card-title">La trasparenza nel Project Work</h2>
         <p class="card-text">
           La trasparenza è altrettanto cruciale nel <strong>project work</strong>, ovvero nella gestione di progetti specifici all'interno di un'organizzazione. Un progetto trasparente garantisce che:
         </p>
-        <ul class="list-group list-group-flush">
+        <ul class="list-group">
           <li class="list-group-item">Tutti i membri del team abbiano accesso alle stesse informazioni.</li>
           <li class="list-group-item">Le decisioni siano documentate e giustificate.</li>
           <li class="list-group-item">I progressi e gli eventuali ritardi siano comunicati in modo aperto.</li>
@@ -68,8 +93,9 @@
         </ul>
       </div>
     </div>
-
-    <div class="card mb-4">
+  
+    <!-- Card: Conclusione -->
+    <div class="card mb-4 shadow">
       <div class="card-body">
         <h2 class="card-title">Conclusione</h2>
         <p class="card-text">
@@ -78,5 +104,17 @@
       </div>
     </div>
   </div>
+
+  <!-- CTA al #download della pagina principale -->
+  <!-- CTA (Call to Action) ovvero un button che richiama un'azione -->
+  <div class="container text-center my-5">
+    <a href="index.html#download" class="btn btn-primary btn-lg">Scarica ora i report di Lavazza</a>
+  </div>
+  
+
+  <!-- Footer -->
+  <footer class="bg-dark text-center py-3 mt-5 text-white">
+    <span id="disclaimer">Questa pagina è stata creata da Denis Cazzulo, matricola 0312201729.</span>
+  </footer>
 </body>
 </html>
