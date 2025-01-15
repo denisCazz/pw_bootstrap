@@ -3,25 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PW - Traccia con bootstrap</title>
+  <title>L-31 Project Work</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="icon" href="images/favicon.ico">
   <script src="script/download.js" defer></script>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <!-- Navbar moderna con Bootstrap -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow"> 
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
     <div class="container-fluid">
-      <!-- Logo -->
       <a class="navbar-brand d-flex align-items-center" href="#">
-        <!-- Immagine logo con style inline per evitare che l'immagine sia troppo grande-->
         <img src="images/logo.png" id="logo" alt="Logo UniPegaso" class="img-fluid bg-light rounded" style="max-height: 40px; width: auto;">
       </a>
-      <!-- Bottone per mobile -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <!-- Links con anchor per le varie sezioni della pagina + link a pagina esterna per descrizione dei report -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
@@ -33,88 +30,121 @@
           <li class="nav-item">
             <a class="nav-link text-white" href="#aboutLavazza">Informazioni su Lavazza</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="report.html">I report</a>
-          </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Contenuto di esempio -->
-  <main class="container mt-5">
-    <h1 class="text-center">
-      Benvenuto/a nella pagina del Project Work del corso L-31.
-      <br>
-      L'azienda selezionata è <span class="text-primary"><a href="https://www.lavazza.it/it" target="_blank" class="text-decoration-none">Lavazza</a></span>.
-    </h1>
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Esplora i Report di Sostenibilità di Lavazza</h1>
+      <p>Scopri come Lavazza promuove la sostenibilità ambientale e sociale attraverso i suoi report annuali.</p>
+      <a href="#projectDescr" class="cta-button">Scopri di più</a>
+    </div>
+  </section>
 
-    <!-- Contenitore per le sezioni con Bootstrap -->
-    <div class="container mt-4">
-      <div id="projectDescr" class="mb-5">
-        <h2 class="mb-3">Descrizione del progetto</h2>
-        <p class="lead">
-          Questo progetto consiste nella creazione di una pagina web dedicata alla visualizzazione e al download dei report di sostenibilità di Lavazza.
-          <br>
-          I report, disponibili in formato PDF, coprono gli anni 2021, 2022 e 2023, con la possibilità di selezionare l'anno desiderato.
-          <br>
-          A scopo funzionale, è stato aggiunto un alert per segnalare la mancanza di un report per l'anno 2021.
-        </p>
+  <!-- Sezione Statistiche -->
+  <section id="stats" class="section bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Lavazza in Numeri</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="stat">
+            <i class="fas fa-leaf"></i>
+            <h3>98%</h3>
+            <p>Caffè proveniente da fonti sostenibili</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="stat">
+            <i class="fas fa-globe"></i>
+            <h3>66%</h3>
+            <p>Intero portfolio prodotti riciclabile, con obiettivo del 100% entro il 2025</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="stat">
+            <i class="fas fa-recycle"></i>
+            <h3>97%</h3>
+            <p>Sfruttamento di utilizzo da scarti digitali</p>
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
 
-      <div id="reportDescr" class="mb-5">
-        <h2 class="mb-3">Descrizione dei report</h2>
-        <p class="lead">
-          I report di sostenibilità sono documenti che riassumono le azioni e gli obiettivi di un'azienda in merito alla sostenibilità ambientale e sociale.
-          <br> 
-          Sono uno strumento utile per monitorare e valutare l'impatto di un'azienda sull'ambiente e sulla società, e per comunicare in modo trasparente le proprie politiche e iniziative.
-          <br>
-          I report di Lavazza sono disponibili in formato PDF e contengono informazioni dettagliate sulle attività svolte dall'azienda per promuovere la sostenibilità e la responsabilità sociale.
-        </p>
-      </div>
+  <!-- Sezioni -->
+  <main class="container section">
+    <div id="projectDescr" class="mb-5 pt-5">
+      <h2>Descrizione del progetto</h2>
+      <p class="lead">
+        Questo progetto consiste nella creazione di una pagina web dedicata alla visualizzazione e al download dei report di sostenibilità di Lavazza.
+        <br>
+        I report, disponibili in formato PDF, coprono gli anni 2021, 2022 e 2023, con la possibilità di selezionare l'anno desiderato.
+        <br>
+        A scopo funzionale, è stato aggiunto un alert per segnalare la mancanza di un report per l'anno 2021.
+      </p>
+    </div>
 
-      <div id="aboutLavazza" class="mb-5">
-        <h2 class="mb-3">Informazioni su Lavazza</h2>
-        <p class="lead">
-          Lavazza è un'azienda italiana leader nella produzione di caffè di alta qualità.
-          <br>
-          Fondata nel 1895 a Torino, Lavazza è rinomata a livello mondiale per il suo impegno verso la sostenibilità e la responsabilità sociale.
-        </p>
-      </div>
-    </div>  
+    <div id="reportDescr" class="mb-5 pt-5">
+      <h2>Descrizione dei report</h2>
+      <p class="lead">
+        I report di sostenibilità sono documenti che riassumono le azioni e gli obiettivi di un'azienda in merito alla sostenibilità ambientale e sociale.
+        <br> 
+        Sono uno strumento utile per monitorare e valutare l'impatto di un'azienda sull'ambiente e sulla società, e per comunicare in modo trasparente le proprie politiche e iniziative.
+        <br>
+        I report di Lavazza sono disponibili in formato PDF e contengono informazioni dettagliate sulle attività svolte dall'azienda per promuovere la sostenibilità e la responsabilità sociale.
+      </p>
+    </div>
 
-    <h2 class="text-center">Download dei report</h2>
-    <!-- Form per la selezione dell'anno dei report -->
-    <div class="container mt-4">
+    <div id="aboutLavazza" class="mb-5 pt-5">
+      <h2>Informazioni su Lavazza</h2>
+      <p class="lead">
+        Lavazza è un'azienda italiana leader nella produzione di caffè di alta qualità.
+        <br>
+        Fondata nel 1895 a Torino, Lavazza è rinomata a livello mondiale per il suo impegno verso la sostenibilità e la responsabilità sociale.
+      </p>
+    </div>
+  </main>
+
+  <!-- Form per il download dei report -->
+  <section class="section bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Download dei report</h2>
       <form class="mb-3">
-        <div class="mb-3">
-          <label for="report_year" class="form-label fw-bold" id="download">Seleziona l'anno:</label>
-          <select class="form-select" name="report_year" id="report_year" onchange="getPdf(event)"> <!-- Evento onchange per chiamare la funzione getPdf -->
-            <option value="">-- Seleziona un anno --</option> <!-- Opzione vuota iniziale -->
+        <div class="mb-3 text-center">
+          <label for="report_year" class="form-label fw-bold">Seleziona l'anno:</label>
+          <select class="form-select" name="report_year" id="report_year" onchange="getPdf(event)">
+            <option value="">-- Seleziona un anno --</option>
             <option value="2023">2023</option>
             <option value="2022">2022</option>
-            <option value="2021">2021</option> <!-- Alert se non disponibile, gestito da JS -->
+            <option value="2021">2021</option>
           </select>
         </div>
       </form>
 
-      <!-- Box di avviso che si mostra quando non ci sono report disponibili la classe d-none nasconde l'elemento-->
-      <div id="alert" class="alert alert-warning d-none" role="alert">
+      <!-- Alert -->
+      <div id="alert" class="alert alert-warning d-none text-center" role="alert">
         Il report di sostenibilità per l'anno selezionato non è disponibile.
       </div>
 
       <!-- Contenitore per i link PDF -->
-      <div id="mostraPdf" class="mt-4"></div>
+      <div id="mostraPdf" class="mt-4 text-center"></div>
     </div>
-
-  </main>
+  </section>
 
   <!-- Footer -->
-  <footer class="bg-dark text-center py-3 mt-5 text-white">
+  <footer class="bg-dark text-center py-3 text-white">
     <span id="disclaimer">Questa pagina è stata creata da Denis Cazzulo, matricola 0312201729.</span>
+    <br>
+    <span id="disclaimer">Fonti dati: 
+      <a href="https://www.alimentinews.it/tecnologia/bevande/1154-lavazza-conferma-la-sua-strategia-di-sviluppo-sostenibile" target="_blank" class="text-decoration-none text-white">Alimenti News, numeri di Lavazza</a>,
+      <a href="https://www.lavazza.it/it" target="_blank" class="text-decoration-none text-white">Lavazza</a>
+    </span>
   </footer>
 
-  <!-- Script Bootstrap per gestire la navbar e lo scroll -->
+  <!-- Script Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
